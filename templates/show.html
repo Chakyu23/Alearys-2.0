@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>alearys</title>
+
+    </head>
+    <body>
+        <div id="show">
+            <h1>{{fiche[id]["ficheName"]}}</h1>
+
+            <h3>
+                Nom : {{fiche[id]["ficheHead"][0]}}<br>
+                Race : {{fiche[id]["ficheHead"][1]}}<br>
+                Taille : {{fiche[id]["ficheHead"][2]}}<br>
+                Poids : {{fiche[id]["ficheHead"][3]}}<br>
+                Age : {{fiche[id]["ficheHead"][4]}}
+            </h3>
+            <p style="white-space: pre-line">
+                {{fiche[id]["ficheBody"]}}
+            </p>
+            <form action="/Alearys">
+                <button type="submit">Go back</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>alearys</title>
+    </head>
+    <body>
+        <div id="mainpage">
+            <h1>Projet Alearys</h1>
+            {% for link in links %}
+            <form action="/Alearys/fiche" method="post">
+                <button type="submit" name="ficheName">{{link['ficheName']}}</button>
+                <input type="hidden" value='{{link["id"]}}' name="ficheId">
+            </form>
+            {% endfor %}
+            <form action="/Alearys/fiche/add/link" method="get">
+                <button type="submit" name="new fiche">nouvelle fiche</button>
+            </form>
+		</div>
+    </body>
+</html>
